@@ -1,18 +1,17 @@
-# libfranka: C++ library for Franka Emika research robots
+# libfranka-fer: C++ library for the Franka Emika Panda Robot
 
-[![Build Status][travis-status]][travis]
-[![codecov][codecov-status]][codecov]
+Through this library, you can control the Franka Emika Panda robot with an enabled [Franka Control Interface (FCI)][fci-docs].
 
-With this library, you can control research versions of Franka Emika robots. See the [Franka Control Interface (FCI) documentation][fci-docs] for more information about what `libfranka` can do and how to set it up. The [generated API documentation][api-docs] also gives an overview of its capabilities.
+Note that Franka Robotics announced [End of Life for the panda robot](eol) at the end of 2023
+and broke API support for the robot in the development version of libfranka [in 2022](api-incompatible).
+
+This repository forked from the last version that supported the panda.
 
 ## License
 
-`libfranka` is licensed under the [Apache 2.0 license][apache-2.0].
+`libfranka-fer` is licensed under the [Apache 2.0 license][apache-2.0].
 
 [apache-2.0]: https://www.apache.org/licenses/LICENSE-2.0.html
-[api-docs]: https://frankaemika.github.io/libfranka
-[fci-docs]: https://frankaemika.github.io/docs
-[travis-status]: https://travis-ci.org/frankaemika/libfranka.svg?branch=master
-[travis]: https://travis-ci.org/frankaemika/libfranka
-[codecov-status]: https://codecov.io/gh/frankaemika/libfranka/branch/master/graph/badge.svg
-[codecov]: https://codecov.io/gh/frankaemika/libfranka
+[fci-docs]: https://frankarobotics.github.io/docs
+[eol]: https://download.franka.de/End-of-Life-Franka-Emika-Robot_EN.pdf
+[api-incompatible]: https://github.com/frankarobotics/libfranka/blob/d171cc99300a711631bd3c8362c9d66680d63a5c/CHANGELOG.md?plain=1#L81
