@@ -4,9 +4,9 @@
    schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>libfranka</name>
-  <version>0.15.0</version>
-  <description>libfranka is a C++ library for Franka Robotics research robots</description>
-  <maintainer email="support@franka.de">Franka Robotics GmbH</maintainer>
+  <version>0.9.2</version>
+  <description>libfranka version compatible with the Franka Emika Robot / Panda</description>
+  <maintainer email="me@v4hn.de">v4hn</maintainer>
   <license>Apache 2.0</license>
 
   <url type="website">http://wiki.ros.org/libfranka</url>
@@ -19,11 +19,9 @@
   <build_depend>eigen</build_depend>
   <build_depend>fmt</build_depend>
   <build_depend>libpoco-dev</build_depend>
-  <build_depend>pinocchio</build_depend>
 
   <exec_depend>fmt</exec_depend>
   <exec_depend>libpoco-dev</exec_depend>
-  <exec_depend>pinocchio</exec_depend>
 
   <doc_depend>doxygen</doc_depend>
   <doc_depend>graphviz</doc_depend>
