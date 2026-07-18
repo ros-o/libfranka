@@ -19,9 +19,6 @@ else()
   add_compile_options(-Wall -Wextra)
 endif()
 
-set(THIRDPARTY_SOURCES_DIR "${CMAKE_CURRENT_SOURCE_DIR}/3rdparty" CACHE PATH
-  "Directory for third-party sources")
-
 ## Dependencies
 find_package(Poco REQUIRED COMPONENTS Net Foundation)
 find_package(Eigen3 REQUIRED)
